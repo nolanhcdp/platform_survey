@@ -348,11 +348,11 @@
 // 1) Paste your Google Apps Script Web App URL here (see Code.gs):
 const GOOGLE_SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbzKRy2kX4Lgs_bV5cjZ3veAYeJ86-NFA5JJjiOKqqKy4LYvHMn6o19t8AjxxE0H2K5zTQ/exec";
 
-// 2) AI follow-up endpoint.
-//    • Inside Claude.ai this direct URL works as-is, so you can preview it.
-//    • For your DEPLOYED page, set this to your own proxy URL (see chat notes).
-//    • Set to "" (empty) to turn the AI feature off entirely.
-const AI_ENDPOINT = "https://api.anthropic.com/v1/messages";
+// 2) AI follow-up endpoint — OFF.
+//    Empty string hides the "Say a little more" button everywhere. To switch it
+//    back on later you'd point this at your own proxy URL (it needs a backend
+//    holding an API key; it can't call Anthropic directly from a hosted page).
+const AI_ENDPOINT = "";
 
 // Light-touch issue suggestions (Howard County flavored — edit freely):
 const ISSUE_SUGGESTIONS = [
